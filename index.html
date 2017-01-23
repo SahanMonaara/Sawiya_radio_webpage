@@ -1,0 +1,460 @@
+<!--
+Author: Samith Basnayaka
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SawiyaRadio.com</title>
+                
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- js -->
+                
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+                <!-- start-smoth-scrolling -->
+                
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="header">
+			<!-- container -->
+			<div class="container">
+				<div class="header-logo">
+					<h1><a href="#">සවිය <span>ගුවන්විදුලිය</span></a></h1>
+				</div>
+				<div class="top-nav">
+					<span ><img src="images/logo_1.png" width="300" alt=""></span>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- banner Slider starts Here -->
+	  			<script src="js/responsiveslides.min.js"></script>
+				 <script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 4
+					  $("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				  </script>
+				<!--//End-slider-script -->
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider4">
+						<li>
+							<div class="header-info">
+								<p>LIVE PERMORMANCE</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	සබරගමුවෙන් විශ්ව යතාර්ථයට</p>
+								<div class="red">20 SEPTEMBER 2014</div>
+								<div class="button"><a href="#">සජීවී විකාශණය</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE TELECAST</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	සබරගමුවෙන් විශ්ව යතාර්ථයට</p>
+								<div class="red">24 OCTOMER 2014</div>
+								<div class="button"><a href="#">සජීවී විකාශණය</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE DANCE SHOW</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	සබරගමුවෙන් විශ්ව යතාර්ථයට</p>
+								<div class="red">15 JANUARY 2013</div>
+								<div class="button"><a href="#">සජීවී විකාශණය</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE TELECAST</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	සබරගමුවෙන් විශ්ව යතාර්ථයට</p>
+								<div class="red">24 OCTOMER 2014</div>
+								<div class="button"><a href="#">සජීවී විකාශණය</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="header-info">
+								<p>LIVE DANCE SHOW</p>
+								<p>BY<span>TEMBANG</span><span class="sub-text">Jawa</span></p>
+								<p>	සබරගමුවෙන් විශ්ව යතාර්ථයට</p>
+								<div class="red">15 JANUARY 2013</div>
+								<div class="button"><a href="#">සජීවී විකාශණය</a></div>
+							</div>
+						</li>
+					</ul>
+					<div class="clearfix"> </div>
+					<!-- banner Slider Ends Here --> 
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- header -->
+		<!-- sticky -->
+		<div class="sticky">
+			<!-- container -->
+			<div class="container">
+				<div class="top-header">
+					<div class="fixed-header">
+					<div class="sticky-logo">
+						<h1><a class="scroll" href="#home">සවිය <span>ගුවන්විදුලිය</a> </span></h1>
+					</div>	
+					<div class="sticky-nav">
+						<ul>
+							<li><a class="scroll active" href="#about">සවිය අප ගැන</a></li>   
+							<li><a class="scroll" href="#event">වැඩසටහන් </a></li>
+							<li><a class="scroll" href="#contact">විමසීම් </a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!-- container -->	
+		</div>
+		<!-- sticky -->
+		<!-- script-for sticky-nav -->
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".top-header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".top-header").addClass("fixed");
+				}else{
+					$(".top-header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+                
+		<!-- banner -->
+		<div class="banner">
+			<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span></a>
+                        <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		</div>
+		<!-- banner -->
+                
+		<!-- about -->
+		<div id="about" class="about">
+			<!-- container -->	
+			<div class="container">
+				<h3>සවිය අප ගැන</h3>
+				<label> </label>
+			</div>
+			<!-- container -->	
+			<div class="border">
+				
+			</div>
+			<!-- about-info -->
+			<div class="about-info">
+				<!-- container -->	
+				<div class="container">
+					<div class="col-md-8 about-info-left">
+						<p> ශ්‍රී ලංකා සබරගමුව විශ්වවිද්‍යාලීය මහා ශිෂ්‍ය සංගමය යටතේ පවතින මාධ්‍ය අනුකමිටුව විසින් ආරම්භ කරන ලද සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.
+
+						<span>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</span></p>
+
+						<p class="bottom-text">"Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim."</p>
+						<div class="map">
+							<img src="images/map.png" alt="" />
+						</div>
+					</div>
+					<div class="col-md-4 about-info-right">
+						<div class="about-img">
+							<span ><img src="images/logo_1.png" width="300" alt=""></span>
+						</div>
+							<div class="about-right-hedding">
+								<h3>TIMELINE</h3>
+							</div>
+							<div class="border-bottom1"> </div>
+							<div class="timeline-grid">
+								<label class="red"> </label>
+								<h4>2006</h4>
+								<p>ආරම්භය</p>
+							</div>
+							<div class="timeline-grid middle">
+								<label class="red1"> </label>
+								<h4>2015</h4>
+								<p>පිරිහිබිනි දියවර 2015</p>
+							</div>
+							<div class="timeline-grid bottom">
+								<label class="red2"> </label>
+								<h4>2016</h4>
+								<p>පිරිහිබිනි දියවර 2017</p>
+							</div>
+							<div class="border-bottom3"> </div>
+							
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-- container -->	
+				<div class="border-bottom"> </div>
+			</div>
+			<!-- about-info -->
+		</div>
+		<!-- about -->
+		<!-- content-events -->
+		<div id="event" class="content-event">
+			<!-- container -->
+			<div class="container">
+				<h3>අද වැඩසටහන්</h3>
+				<div class="event-grids">
+					<div class="col-md-3 event-grid">
+						<div class="pic"> </div>
+						<ul>
+							<li class="hedding">වැඩසටහන් </li>
+							<li class="date">2 December 2017</li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 event-grid small-text">
+						<p>සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.</p>
+					</div>
+					<div class="col-md-2 event-grid large-text">
+						<p class="text">8AM - 10AM</p>
+					</div>
+					<div class="col-md-3 event-grid text-button">
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="event-grids">
+					<div class="col-md-3 event-grid">
+						<div class="pic"> </div>
+						<ul>
+							<li class="hedding">වැඩසටහන් </li>
+							<li class="date">2 December 2017</li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 event-grid small-text">
+						<p>සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.</p>
+					</div>
+					<div class="col-md-2 event-grid large-text">
+						<p class="text">8AM - 10AM</p>
+					</div>
+					<div class="col-md-3 event-grid text-button">
+						<ul>
+							
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="event-grids">
+					<div class="col-md-3 event-grid">
+						<div class="pic"> </div>
+						<ul>
+							<li class="hedding">වැඩසටහන් </li>
+							<li class="date">2 December 2017</li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 event-grid small-text">
+						<p>සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.</p>
+					</div>
+					<div class="col-md-2 event-grid large-text">
+						<p class="text">8AM - 10AM</p>
+					</div>
+					<div class="col-md-3 event-grid text-button">
+						<ul>
+							
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="event-grids">
+					<div class="col-md-3 event-grid">
+						<div class="pic"> </div>
+						<ul>
+							<li class="hedding">වැඩසටහන් </li>
+                                                        <li class="date">2 December 2017</li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 event-grid small-text">
+						<p>සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.</p>
+					</div>
+					<div class="col-md-2 event-grid large-text">
+						<p class="text">8AM - 10AM</p>
+					</div>
+					<div class="col-md-3 event-grid text-button">
+						<ul>
+							
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="event-grids">
+					<div class="col-md-3 event-grid">
+						<div class="pic"> </div>
+						<ul>
+							<li class="hedding">වැඩසටහන් </li>
+							<li class="date">2 December 2017</li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 event-grid small-text">
+						<p>සවිය ගුවන්විදුලියෙහි වෙබ් අවකාශයට ඔබට මේ හරහා සවන් දිය හැක.</p>
+					</div>
+					<div class="col-md-2 event-grid large-text">
+						<p class="text">8AM - 10AM</p>
+					</div>
+					<div class="col-md-3 event-grid text-button">
+						<ul>
+							
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- contact-events -->
+		<!-- portfolio -->
+		<div class="portfolio">
+			<!-- container -->
+			<div class="container">
+				<h3>ගැලරිය</h3>
+				<div class="gallery-images">
+					<div class="gallery-image">
+						<img src="images/3.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="gallery-image">
+						<img src="images/4.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="gallery-image right">
+						<img src="images/5.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="gallery-image">
+						<img src="images/7.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="gallery-image">
+						<img src="images/6.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="gallery-image right">
+						<img src="images/8.jpg" alt="" />
+						<div class="caption">
+							<span> </span>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="gallery-text">
+					
+					</div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- portfolio -->
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<!-- container -->
+			<div class="container">
+				<h3>විමසීම් </h3>
+				<div class="col-md-7">
+					<div class="col-md-6">
+						<form>
+							<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+						</form>
+					</div>
+					<div class="col-md-6">
+						<form>
+							<textarea value="Message:" onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';">Message</textarea>	
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="submit-button">
+						<form>
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<ul>
+						<li><a href="#" class="facebook"> </a></li>
+						<li><a href="#" class="twitter"> </a></li>
+						<li><a href="#" class="rect"> </a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- contact -->
+		<div class="border-bottom"> </div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="copyright">
+				<p>
+					මහා ශිෂ්‍ය සංගමය - ශ්‍රී ලංකා සබරගමුව විශ්වවිද්‍යාලය <br/> Designed by <a href="">Sawiya Technical Crew</a>
+				</p>
+			</div>
+		</div>
+		<!-- footer -->
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+	</body>
+</html>
